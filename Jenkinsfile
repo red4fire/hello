@@ -10,7 +10,7 @@ pipeline {
     stage('Build Jar') {
       steps {
         tool 'jdk-11'
-        sh './gradlew clean build -Dorg.gradle.java.home=/home/ubuntu/jenkins/tools/hudson.model.JDK/jdk-11'
+        sh './gradlew clean buildJar -Dorg.gradle.java.home=/home/ubuntu/jenkins/tools/hudson.model.JDK/jdk-11'
       }
     }
 
